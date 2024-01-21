@@ -1,3 +1,5 @@
 splines_test.r
 t2_3280.do
 _install_stata_packages.do
+reporting_rate.do
+table2_mw.do
