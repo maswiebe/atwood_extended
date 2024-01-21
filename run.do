@@ -29,6 +29,7 @@ do "$code/acs_cleaning.do"
 
 * heterogeneity
 do "$code/het.do"
+do "$code/eventstudy.do"
 
 * regression weights
 do "$code/regweight.do"
