@@ -74,6 +74,7 @@ panelcombine, use($tables/t2_region1.tex $tables/t2_region2.tex $tables/t2_regio
 
 *-------------------------
 *** heterogeneity: interaction
+/*
 use year sex age birthyr black bpl female cpi_incwage cpi_incwage_no0 ln_cpi_income poverty100 employed hrs_worked M12_exp_rate bpl_region4 bpl_region9 exposure avg_12yr_measles_rate if missing(M12_exp_rate)==0 using "$data/acs_cleaned.dta", clear
 
 gen M12Xfemale = M12_exp_rate*female
@@ -139,3 +140,4 @@ eststo m5
 esttab m4 m5, se label compress replace star(* 0.10 ** 0.05 *** 0.01) nomtitles nocons r2 drop(expXmidwest expXsouth expXwest)
 esttab m4 m5 using "$tables/het_region_all.tex", se label compress replace star(* 0.10 ** 0.05 *** 0.01) nomtitles nocons r2 drop(expXmidwest expXsouth expXwest)
 esttab m4 m5 using "$tables/het_region_all_nostar.tex", se label compress replace nomtitles nostar nocons r2 drop(expXmidwest expXsouth expXwest)
+*/

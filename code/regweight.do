@@ -13,7 +13,7 @@ gen regweight = res2/resid_tot
 
 preserve
 gcollapse (sum) regweight (count) count=regweight, by(bpl)
-bro
+*bro
 scatter regweight bpl
 restore
 * WI has .36
@@ -23,7 +23,7 @@ preserve
 gcollapse (sum) regweight (count) count=regweight, by(black female)
 gegen total = total(count)
 gen frac = count/total
-bro black female regweight frac
+*bro black female regweight frac
 restore
 * pretty similar
 
@@ -31,7 +31,7 @@ preserve
 gcollapse (sum) regweight (count) count=regweight, by(birthyr)
 gegen total = total(count)
 gen frac = count/total
-bro birthyr regweight frac
+*bro birthyr regweight frac
 tw (line regweight birthyr) (line frac birthyr), legend(pos(6) rows(1)) legend(label (1 "Regression weight") label (2 "Sample weight")) xtitle("Birthyear")
 graph export "$figures/regweight_birthyear.png",replace
 graph export "$figures/regweight_birthyear.pdf",replace
@@ -47,6 +47,6 @@ preserve
 gcollapse (sum) regweight (count) count=regweight, by(bpl_region4)
 gegen total = total(count)
 gen frac = count/total
-bro bpl_region4 regweight frac
+*bro bpl_region4 regweight frac
 restore
 * extra weight on midwest, due to Wisconsin 
