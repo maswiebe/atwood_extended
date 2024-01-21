@@ -2,13 +2,15 @@ This repository contains Stata .do files and an R script for the [additional res
 
 To combine my code with the data, first download this repository, then download the original [replication package](https://www.openicpsr.org/openicpsr/project/138401/version/V1/view) and extract the folder 'Replication_Files' to the directory 'data/'.
 This requires signing up for an ICPSR account.
-You also need to download the [ACS data](https://usa.ipums.org/usa/) (Ruggles et al. 2023). This requires signing up for an IPUMS account. 
+You also need to download the [ACS data](https://usa.ipums.org/usa/) (Ruggles et al. 2023); see IPUMS instructions below.
+This requires signing up for an IPUMS account. 
 
 To rerun the analyses, run the file `run.do` using Stata (version 15) and the file `splines.r` using R. 
 Note that you need to set the path in `run.do` on line 2, to define the location of the folder that contains this README; you also need to set the path in `splines.r` on line 8.
+
 Required Stata packages are included in 'code/libraries/stata/', so that the user does not have to download anything and the replication can be run offline. The file `code/_config.do` tells Stata to load packages from this location.
-The file `code/_config.do` tells Stata to load packages from this location.
 Figures and tables are saved in 'output/'; that directory is created by `code/_config.do`.
+It helps to close web browsers to free up memory.
 
 --- 
 IPUMS instructions:
