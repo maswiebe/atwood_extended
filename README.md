@@ -1,4 +1,4 @@
-This repository contains Stata .do files and an R script for the [additional results](https://michaelwiebe.com/assets/atwood/atwood_extended.pdf) from my [comment](https://michaelwiebe.com/assets/atwood/atwood_comment) on "[The Long-Term Effects of Measles Vaccination\\ on Earnings and Employment](https://www.aeaweb.org/articles?id=10.1257/pol.20190509)", Atwood (2022).
+This repository contains Stata .do files and an R script for the [additional results](https://michaelwiebe.com/assets/atwood/atwood_extended.pdf) from my [comment](https://michaelwiebe.com/assets/atwood/atwood_comment) on "[The Long-Term Effects of Measles Vaccination on Earnings and Employment](https://www.aeaweb.org/articles?id=10.1257/pol.20190509)", Atwood (2022).
 
 To combine my code with the data, first download this repository, then download the original [replication package](https://www.openicpsr.org/openicpsr/project/138401/version/V1/view) and extract the folder 'Replication_Files' to the directory 'data/'.
 This requires signing up for an ICPSR account.
