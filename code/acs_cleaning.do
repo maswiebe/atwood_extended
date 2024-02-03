@@ -11,10 +11,6 @@ log using "acs_cleaning", replace  */
 cd "$data"
 * need to set working directory to folder containing the IPUMS extract
 do "usa_00003.do"
-* save "$data/acs_raw.dta", replace 
-cd "$root"
-
-use "$data/acs_raw.dta", clear
 
 *clean the ACS data from IPUMS
 /* cd "$raw_data"
